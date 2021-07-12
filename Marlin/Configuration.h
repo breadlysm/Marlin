@@ -519,9 +519,9 @@
     #define DEFAULT_Kd_LIST {  78.81,  78.81 }
   #else
     // Ender 3 v2
-    #define DEFAULT_Kp  28.72
-    #define DEFAULT_Ki   2.62
-    #define DEFAULT_Kd  78.81
+    #define DEFAULT_Kp  7.80
+    #define DEFAULT_Ki  0.59
+    #define DEFAULT_Kd  95.00
   #endif
 #endif // PIDTEMP
 
@@ -1062,7 +1062,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -55.5, -12, 0 }
+#define NOZZLE_TO_PROBE_OFFSET { -55.5, -12, -3.14 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1561,8 +1561,8 @@
 
 // Manually set the home position. Leave these undefined for automatic settings.
 // For DELTA this is the top-center of the Cartesian print volume.
-//#define MANUAL_X_HOME_POS 0
-#define MANUAL_Y_HOME_POS -9
+#define MANUAL_X_HOME_POS 12
+#define MANUAL_Y_HOME_POS -8
 //#define MANUAL_Z_HOME_POS 0
 
 // Use "Z Safe Homing" to avoid homing with a Z probe outside the bed area.
